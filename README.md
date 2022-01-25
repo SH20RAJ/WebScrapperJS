@@ -3,11 +3,11 @@ WebScrapperJS - Get Content/HTML of any website without being blocked by CORS ev
 
 ---
 
-Website :- https://sh20raj.github.io/WebScrapperJS/
+Website :- <a href="https://sh20raj.github.io/WebScrapperJS/"> https://sh20raj.github.io/WebScrapperJS/ </a> 
 
-GitHub :- https://github.com/SH20RAJ/WebScrapperJS/
+<a href="https://github.com/SH20RAJ/WebScrapperJS/"> GitHub </a>  
+<a href="https://replit.com/@SH20RAJ/WebScrapperJS/"> Repl.it </a>
 
-Repl :- https://replit.com/@SH20RAJ/WebScrapperJS/
 
 ---
 ## Grab the CDN or Download the JavaScript File
