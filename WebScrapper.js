@@ -1,5 +1,13 @@
+/**
+ * Integrated with WhollyAPI :- https://wholly-api.herokuapp.com/
+ * 
+ * Website :- https://sh20raj.github.io/WebScrapperJS/
+ * GitHub :- https://github.com/SH20RAJ/WebScrapperJS/
+ * Repl :- https://replit.com/@SH20RAJ/WebScrapperJS/
+ * 
+ * 
+ */
 
-//https://wholly-api.herokuapp.com/get/website-data.php?get_html=https://example.com/
 
 function scrapper(url){
   var baseurl = 'https://wholly-api.herokuapp.com/get/website-data.php?get_html=';
