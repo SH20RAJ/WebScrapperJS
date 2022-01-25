@@ -33,7 +33,9 @@ let MyWebScrapper = new scrapper('https://example.com/');
 console.log(MyWebScrapper.gethtml()); //Grab https://example.com/ and print on console
 
 ```
+
 Still you can Use new created scrapper `MyWebScrapper` for grabbing new URLs. Like
+
 ```javascript
 let MyWebScrapper = new scrapper('https://example.com/');
 //You can now directly call gethtml() instead of passing a url into it.
@@ -45,12 +47,18 @@ console.log(MyWebScrapper.gethtml('https://example.com/')); //Grab https://youtu
 ```
 
 ---
+### You can also fetch JSON Using WebScrapperJS 
+```javascript
+var json = WebScrapper.getjson('https://jsonplaceholder.typicode.com/todos/1')
+```
+
+---
 
 ### Try this on Codepen
 
 Sample Code | Codepen :- <a href="https://codepen.io/SH20RAJ/pen/VwrwjXJ?editors=1001">https://codepen.io/SH20RAJ/pen/VwrwjXJ?editors=1001</a>
 
-```
+```html
 <div id="scrappedcontent"></div>
 
 <script src="https://cdn.jsdelivr.net/gh/SH20RAJ/WebScrapperJS/WebScrapper.min.js" ></script> 

@@ -28,6 +28,10 @@ function scrapper(url){
     return text;
 }
 
+this.getjson = (a)=>{
+  return JSON.parse(WebScrapper.gethtml(a));
+}
+
 }
 
 let WebScrapper = new scrapper();
