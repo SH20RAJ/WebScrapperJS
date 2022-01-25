@@ -6,7 +6,7 @@ function scrapper(url){
   this.url = url;
  
   this.gethtml = (a,c) => {
-    if(!a) a = url;
+    if(!a) a = baseurl+''+url;else a=baseurl+''+a;
     var text;
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
@@ -23,3 +23,4 @@ function scrapper(url){
 }
 
 let WebScrapper = new scrapper();
+
