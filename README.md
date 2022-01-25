@@ -2,13 +2,12 @@
 WebScrapperJS - Get Content/HTML of any website without being blocked by CORS even using JavaScript by WhollyAPI 
 
 ---
-
+<center>
 Website :- <a href="https://sh20raj.github.io/WebScrapperJS/"> https://sh20raj.github.io/WebScrapperJS/ </a> 
 
-<a href="https://github.com/SH20RAJ/WebScrapperJS/"> GitHub </a>  
-<a href="https://replit.com/@SH20RAJ/WebScrapperJS/"> Repl.it </a>
+<a href="https://github.com/SH20RAJ/WebScrapperJS/">GitHub</a>  | <a href="https://replit.com/@SH20RAJ/WebScrapperJS/">Repl.it</a>
 
-
+</center>
 ---
 ## Grab the CDN or Download the JavaScript File
 
