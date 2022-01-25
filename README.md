@@ -13,7 +13,7 @@ Repl :- https://replit.com/@SH20RAJ/WebScrapperJS/
 ## Grab the CDN or Download the JavaScript File
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/SH20RAJ/WebScrapperJS/WebScrapper.js" ></script>
+<script src="https://cdn.jsdelivr.net/gh/SH20RAJ/WebScrapperJS/WebScrapper.min.js" ></script>
 ```
 ---
 
