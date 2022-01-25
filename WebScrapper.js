@@ -4,18 +4,9 @@
 function scrapper(url){
   var baseurl = 'https://wholly-api.herokuapp.com/get/website-data.php?get_html=';
   this.url = url;
-  this.gethtml=(url)=>{
-    var string = baseurl+''+url;
-    csl(string);
-    csl(grabber(string));
-    return grabber(string);
-  }
-}
-
-let WebScrapper = new scrapper('https://wholly-api.herokuapp.com/get/website-data.php?get_html=https://example.com/');
-
-
-function grabber(a,c) {
+ 
+  this.gethtml = (a,c) => {
+    if(!a) a = url;
     var text;
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
@@ -28,3 +19,7 @@ function grabber(a,c) {
     xhttp.send();
     return text;
 }
+
+}
+
+let WebScrapper = new scrapper();
