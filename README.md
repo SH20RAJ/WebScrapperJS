@@ -43,3 +43,26 @@ console.log(MyWebScrapper.gethtml()); //Grab https://example.com/ and print on c
 console.log(MyWebScrapper.gethtml('https://example.com/')); //Grab https://youtube.com/ and print on console
 
 ```
+
+---
+
+### Try this on Codepen
+
+Sample Code | Codepen :- <a href="https://codepen.io/SH20RAJ/pen/VwrwjXJ?editors=1001">https://codepen.io/SH20RAJ/pen/VwrwjXJ?editors=1001</a>
+
+```
+<div id="scrappedcontent"></div>
+
+<script src="https://cdn.jsdelivr.net/gh/SH20RAJ/WebScrapperJS/WebScrapper.min.js" ></script> 
+<script>
+  let MyWebScrapper = new scrapper('https://google.com/');
+//You can now directly call gethtml() instead of passing a url into it.
+
+console.log(MyWebScrapper.gethtml()); //Grab https://example.com/ and print on console
+var html = MyWebScrapper.gethtml('https://example.com/');
+  
+console.log(html); //Grab https://youtube.com/ and print on console
+  
+document.getElementById('scrappedcontent').innerHTML = html;
+</script>
+```
