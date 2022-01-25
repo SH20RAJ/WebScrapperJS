@@ -8,7 +8,9 @@ Website :- <a href="https://sh20raj.github.io/WebScrapperJS/"> https://sh20raj.g
 <a href="https://github.com/SH20RAJ/WebScrapperJS/">GitHub</a>  | <a href="https://replit.com/@SH20RAJ/WebScrapperJS/">Repl.it</a>
 
 </center>
+
 ---
+
 ## Grab the CDN or Download the JavaScript File
 
 ```html
