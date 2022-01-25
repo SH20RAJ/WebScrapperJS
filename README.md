@@ -49,8 +49,10 @@ console.log(MyWebScrapper.gethtml('https://example.com/')); //Grab https://youtu
 ---
 ### You can also fetch JSON Using WebScrapperJS 
 ```javascript
-var json = WebScrapper.getjson('https://jsonplaceholder.typicode.com/todos/1')
+var json = WebScrapper.getjson('https://jsonplaceholder.typicode.com/todos/1');//Return result direct in json format
+console.log(json);
 ```
+<a href="">Try This</a>
 
 ---
 
