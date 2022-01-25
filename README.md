@@ -21,7 +21,10 @@ console.log(MyWebScrapper.gethtml()); //Grab https://example.com/ and print on c
 ```
 Still you can Use new created scrapper `MyWebScrapper` for grabbing new URLs. Like
 ```javascript
-//let MyWebScrapper = new scrapper('https://example.com/');
+let MyWebScrapper = new scrapper('https://example.com/');
+//You can now directly call gethtml() instead of passing a url into it.
+
+console.log(MyWebScrapper.gethtml()); //Grab https://example.com/ and print on console
 
 console.log(MyWebScrapper.gethtml('https://example.com/')); //Grab https://youtube.com/ and print on console
 
