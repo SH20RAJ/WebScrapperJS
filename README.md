@@ -18,14 +18,17 @@ Website :- <a href="https://sh20raj.github.io/WebScrapperJS/"> https://sh20raj.g
 ```
 ---
 
-## To Get HTML Content of Any Website
+### To Get HTML/Text Content of Any Website `WebScrapper.gethtml()` or `WebScrapper.get()`
 ```javascript
 var url = 'https://google.com/';
 var html = WebScrapper.gethtml(url);//html of the url will be stored in this variable
 console.log(html);
 ```
+**`WebScrapper.gethtml()` or `WebScrapper.get()` both are similar.**
 
-## Intialise own WebScrapper with URL
+---
+
+### Intialise own WebScrapper with URL `new scrapper()`
 ```javascript
 let MyWebScrapper = new scrapper('https://example.com/');
 //You can now directly call gethtml() instead of passing a url into it.
@@ -53,6 +56,34 @@ var json = WebScrapper.getjson('https://jsonplaceholder.typicode.com/todos/1');/
 console.log(json);
 ```
 <a href="https://jsfiddle.net/sh20raj/voty4xpr/">Try This</a>
+
+---
+## Getting Result more Faster
+
+**Use the Below codes/methods only if the origin or feching URL is not blocked by CORS Like this**
+
+![cors preview](cors.PNG)
+
+if your origin is not blocking you then you must use the below fetch() code instead of gethtml() directly.
+because it returns the results faster without using API.It will directly fetch origin using AJAX.
+
+### Use `WebScrapper.fetch()`  to get the html/text
+
+We will use this url `https://webscrapperjs.sh20raj.repl.co/` because it is not blocked.
+
+```javascript
+var html = WebScrapper.fetch('https://webscrapperjs.sh20raj.repl.co/');//This will be return the HTML/Text inside the webpage
+console.log(html);
+```
+<a href="https://jsfiddle.net/sh20raj/sbxjfv0c/">Try this</a>
+
+### Use `WebScrapper.fetchjson()`  to get the Parsed JSON
+
+```javascript
+var json = WebScrapper.fetchjson('https://webscrapperjs.sh20raj.repl.co/sample.json');//This will be return the JSON inside the webpage. 
+console.log(json);
+```
+<a href="https://jsfiddle.net/sh20raj/okuLswtg/">Try this</a>
 
 ---
 

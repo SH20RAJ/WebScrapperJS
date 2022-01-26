@@ -13,8 +13,10 @@ function scrapper(url){
   var baseurl = 'https://wholly-api.herokuapp.com/get/website-data.php?get_html=';
   this.url = url;
  
-  this.gethtml = (a,c) => {
+  this.gethtml = (a,b,c) => {
+    if(b) baseurl='';
     if(!a) a = baseurl+''+url;else a=baseurl+''+a;
+    console.log(a);
     var text;
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
@@ -23,16 +25,26 @@ function scrapper(url){
             text = rpns;
         }
     };
-    xhttp.open("GET", a, c);
+    xhttp.open("GET", a,c);
     xhttp.send();
     return text;
+}
+
+this.get = (a,b,c)=>{
+  return WebScrapper.gethtml(a,b,c);
 }
 
 this.getjson = (a)=>{
   return JSON.parse(WebScrapper.gethtml(a));
 }
 
+this.fetch = (a)=>{
+  return WebScrapper.gethtml(a,true);
+}
+this.fetchjson = (a)=>{
+  return JSON.parse(WebScrapper.gethtml(a,true));
+}
+
 }
 
 let WebScrapper = new scrapper();
-
