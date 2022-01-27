@@ -14,7 +14,7 @@ Website :- <a href="https://sh20raj.github.io/WebScrapperJS/"> https://sh20raj.g
 ## Grab the CDN or Download the JavaScript File
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/SH20RAJ/WebScrapperJS/WebScrapper.min.js" ></script>
+<script src="https://cdn.jsdelivr.net/gh/SH20RAJ/WebScrapperJS@latest/WebScrapper.min.js" ></script>
 ```
 ---
 
