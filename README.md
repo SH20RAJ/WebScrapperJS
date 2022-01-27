@@ -18,13 +18,34 @@ Website :- <a href="https://sh20raj.github.io/WebScrapperJS/"> https://sh20raj.g
 ```
 ---
 
-### To Get HTML/Text Content of Any Website `WebScrapper.gethtml()` or `WebScrapper.get()`
+- **`WebScrapper.get()`** will return you the content of the provided url in a String. 
+
+- **`WebScrapper.gethtml()`** will return you the content of the provided url as Parsed DOM. ( Will get the html and Parse it as a DOM object . Will return you a #Document)
+
+- **`WebScrapper.getjson()`** will return you the content of the provided url as Parsed JSON.
+
+---
+
+### To Get HTML/Text/Content of Any Website in a String.
+
 ```javascript
-var url = 'https://google.com/';
-var html = WebScrapper.gethtml(url);//html of the url will be stored in this variable
+var html = WebScrapper.get('https://webscrapperjs.sh20raj.repl.co/');//This will be return the HTML/Text inside the webpage in a String.
 console.log(html);
 ```
-**`WebScrapper.gethtml()` or `WebScrapper.get()` both are similar.**
+This will be return the HTML/Text inside the webpage in a String.
+
+<a href="https://jsfiddle.net/sh20raj/sbxjfv0c/">Try this</a>
+
+---
+
+
+### To Get HTML Content of Any Website in DOM Parsed Form `WebScrapper.gethtml()` 
+```javascript
+var url = 'https://google.com/';
+var html = WebScrapper.gethtml(url);//html of the url will be Parsed and stored in this variable
+console.log(html);
+console.log(html.title);//As you Use document.title you can Use Like this to get the title.
+```
 
 ---
 
@@ -67,21 +88,37 @@ console.log(json);
 if your origin is not blocking you then you must use the below fetch() code instead of gethtml() directly.
 because it returns the results faster without using API.It will directly fetch origin using AJAX.
 
-### Use `WebScrapper.fetch()`  to get the html/text
+### Use `WebScrapper.fetch()`  to get the html/text in a string
 
 We will use this url `https://webscrapperjs.sh20raj.repl.co/` because it is not blocked.
 
 ```javascript
-var html = WebScrapper.fetch('https://webscrapperjs.sh20raj.repl.co/');//This will be return the HTML/Text inside the webpage
+var html = WebScrapper.fetch('https://webscrapperjs.sh20raj.repl.co/');//This will be return the HTML/Text inside the webpage a string.
 console.log(html);
 ```
+This will be return the HTML/Text inside the webpage in a String.
+
 <a href="https://jsfiddle.net/sh20raj/sbxjfv0c/">Try this</a>
+
+---
+
+### Use `WebScrapper.fetchhtml()`  to get the Parsed HTML/DOM document as `WebScrapper.gethtml()`.
+
+```javascript
+var html = WebScrapper.fetchhtml('https://webscrapperjs.sh20raj.repl.co/');//This will be return the Parsed HTML inside the webpage. 
+console.log(html);
+console.log(html.title);
+```
+<a href="https://jsfiddle.net/sh20raj/8fc2u1nj/">Try this</a>
+
+---
 
 ### Use `WebScrapper.fetchjson()`  to get the Parsed JSON
 
 ```javascript
 var json = WebScrapper.fetchjson('https://webscrapperjs.sh20raj.repl.co/sample.json');//This will be return the JSON inside the webpage. 
 console.log(json);
+console.log(json.id);
 ```
 <a href="https://jsfiddle.net/sh20raj/okuLswtg/">Try this</a>
 

@@ -12,8 +12,11 @@
 function scrapper(url){
   var baseurl = 'https://wholly-api.herokuapp.com/get/website-data.php?get_html=';
   this.url = url;
+  
+  // make a new parser
+  this.parser = new DOMParser();
  
-  this.gethtml = (a,b,c) => {
+  this.get = (a,b,c) => {
     if(b) baseurl='';
     if(!a) a = baseurl+''+url;else a=baseurl+''+a;
     console.log(a);
@@ -30,20 +33,27 @@ function scrapper(url){
     return text;
 }
 
-this.get = (a,b,c)=>{
-  return WebScrapper.gethtml(a,b,c);
+this.gethtml = (a,b,c)=>{
+  return this.parser.parseFromString(this.get(a,b,c), "text/html") ;
 }
 
 this.getjson = (a)=>{
-  return JSON.parse(WebScrapper.gethtml(a));
+  return JSON.parse(this.get(a));
 }
 
 this.fetch = (a)=>{
-  return WebScrapper.gethtml(a,true);
+  return this.get(a,true);
 }
 this.fetchjson = (a)=>{
-  return JSON.parse(WebScrapper.gethtml(a,true));
+  return JSON.parse(this.get(a,true));
 }
+this.fetchhtml = (a)=>{
+  return this.parser.parseFromString(WebScrapper.get(a,true), "text/html");
+}
+
+
+//convert html string into DOM
+//const document2 = parser.parseFromString(htmlStr, "text/html");
 
 }
 
