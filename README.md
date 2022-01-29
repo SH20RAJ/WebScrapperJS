@@ -14,7 +14,7 @@ Website :- <a href="https://sh20raj.github.io/WebScrapperJS/"> https://sh20raj.g
 ## Grab the CDN or Download the JavaScript File
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/SH20RAJ/WebScrapperJS@latest/WebScrapper.min.js" ></script>
+<script src="https://cdn.jsdelivr.net/gh/SH20RAJ/WebScrapperJS/WebScrapper.min.js" ></script>
 ```
 ---
 
@@ -146,3 +146,24 @@ document.getElementById('scrappedcontent').innerHTML = html;
 ```
 
 See Results <a href="https://codepen.io/SH20RAJ/pen/VwrwjXJ?editors=1001">Here</a> 
+
+---
+
+# Other Features
+
+## `WebScrapper.getparam()` get URL Parameters
+
+Assuming your Current URL is `https://example.com/?id=7`.
+```javascript
+let id = getparam('id');
+console.log(id);//Will Return "7" .
+
+```
+
+### Use Custom string instead of current URL
+
+```javascript
+let id = getparam('id','https://example.com/?id=20');
+console.log(id);//Will Return "20" .
+
+```
