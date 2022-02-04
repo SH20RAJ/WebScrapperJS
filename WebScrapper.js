@@ -51,7 +51,7 @@ this.fetchhtml = (a)=>{
   return this.parser.parseFromString(WebScrapper.get(a,true), "text/html");
 }
 this.getparam = (a,e) => { return e||(e=window.location.href),new URL(e).searchParams.get(a)};
-
+this.getRandomInt = (min, max)=>~~(Math.random()*(max-min+1)+min);
 //convert html string into DOM
 //const document2 = parser.parseFromString(htmlStr, "text/html");
 
