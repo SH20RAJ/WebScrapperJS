@@ -155,7 +155,7 @@ See Results <a href="https://codepen.io/SH20RAJ/pen/VwrwjXJ?editors=1001">Here</
 
 Assuming your Current URL is `https://example.com/?id=7`.
 ```javascript
-let id = getparam('id');
+let id = WebScrapper.getparam('id');
 console.log(id);//Will Return "7" .
 
 ```
@@ -163,7 +163,16 @@ console.log(id);//Will Return "7" .
 ### Use Custom string instead of current URL
 
 ```javascript
-let id = getparam('id','https://example.com/?id=20');
+let id = WebScrapper.getparam('id','https://example.com/?id=20');
 console.log(id);//Will Return "20" .
+
+```
+
+## `WebScrapper.getRandomInt()` get random integer in range
+
+This function take 2 parameter `WebScrapper.getRandomInt(min,max)` the generated number will be in between min and max.
+```javascript
+let id = WebScrapper.getRandomInt(10,100);
+console.log(id);//Will Return a number between 10 and 100 .
 
 ```
