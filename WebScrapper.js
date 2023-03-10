@@ -1,5 +1,6 @@
 /**
  * Integrated with WhollyAPI :- https://wholly-api.herokuapp.com/
+ * But Now Shifted to 000webhostapp.com --- https://wholly-api.000webhostapp.com/
  * 
  * Website :- https://sh20raj.github.io/WebScrapperJS/
  * GitHub :- https://github.com/SH20RAJ/WebScrapperJS/
@@ -10,7 +11,7 @@
 
 
 function scrapper(url){
-  var baseurl = 'https://wholly-api.herokuapp.com/get/website-data.php?get_html=';
+  var baseurl = 'https://wholly-api.000webhostapp.com/get/website-data.php?get_html=';
   this.url = url;
   
   // make a new parser
