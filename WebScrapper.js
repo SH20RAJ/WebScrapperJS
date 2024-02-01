@@ -11,7 +11,7 @@
 
 
 function scrapper(url){
-  var baseurl = 'https://wholly-api.sh20raj.repl.co/get/website-data.php?get_html=';
+  var baseurl = 'https://wholly-api.skinnyrunner.com/get/website-data.php?get_html=';
   this.url = url;
   
   // make a new parser
