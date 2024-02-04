@@ -1,0 +1,26 @@
+{
+  "name": "webscrapperjs",
+  "version": "1.0.0",
+  "description": "WebScrapperJS - Get Content/HTML of any website without being blocked by CORS even using JavaScript by WhollyAPI ",
+  "main": "WebScrapper.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SH20RAJ/WebScrapperJS.git"
+  },
+  "keywords": [
+    "Web",
+    "Scrapper",
+    "JavaScript",
+    "Scrapper",
+    "SH20RAJ"
+  ],
+  "author": "Sh20RAJ",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SH20RAJ/WebScrapperJS/issues"
+  },
+  "homepage": "https://github.com/SH20RAJ/WebScrapperJS#readme"
+}
