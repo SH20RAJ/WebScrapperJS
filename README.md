@@ -1,4 +1,4 @@
-# WebScrapperJS
+# WebScrapperJS [![](https://data.jsdelivr.com/v1/package/gh/SH20RAJ/WebScrapperJS/badge)](https://www.jsdelivr.com/package/gh/SH20RAJ/WebScrapperJS) [![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2FSH20RAJ%2FWebScrapperJS%2F&labelColor=%23ff8a65&countColor=%232ccce4)](https://visitorbadge.io/status?path=https%3A%2F%2Fgithub.com%2FSH20RAJ%2FWebScrapperJS%2F)
 WebScrapperJS - Get Content/HTML of any website without being blocked by CORS even using JavaScript by WhollyAPI 
 
 ---
