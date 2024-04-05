@@ -1,8 +1,6 @@
 /**
- * Integrated with WhollyAPI :- https://wholly-api.herokuapp.com/
- * But Now Shifted to 000webhostapp.com --- https://wholly-api.000webhostapp.com/
  * 
- * Website :- https://sh20raj.github.io/WebScrapperJS/
+ * Website :- https://sh20raj.github.io/WebScrapperJS/ || https://wholly-api.appspages.online/ || https://sh20raj.gitbook.io/whollyapi
  * GitHub :- https://github.com/SH20RAJ/WebScrapperJS/
  * Repl :- https://replit.com/@SH20RAJ/WebScrapperJS/
  * 
@@ -59,3 +57,6 @@ this.getRandomInt = (min, max)=>~~(Math.random()*(max-min+1)+min);
 }
 
 let WebScrapper = new scrapper();
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = WebScrapper;
+}
