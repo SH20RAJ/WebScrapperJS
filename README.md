@@ -177,3 +177,14 @@ let id = WebScrapper.getRandomInt(10,100);
 console.log(id);//Will Return a number between 10 and 100 .
 
 ```
+
+
+## Star History
+
+<a href="https://star-history.com/#sh20raj/webscrapperjs&Date">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=sh20raj/webscrapperjs&type=Date&theme=dark" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=sh20raj/webscrapperjs&type=Date" />
+   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=sh20raj/webscrapperjs&type=Date" />
+ </picture>
+</a>
